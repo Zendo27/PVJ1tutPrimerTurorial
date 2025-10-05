@@ -45,9 +45,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void MovePlayer(float input)
     {
-        strategy.Move(transform, player);
+        strategy.Move(transform, player, input);
     }
 
     private void FixedUpdate()
